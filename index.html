@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Ritesh<span> Portfolio</span></div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <div class="home-left">
+        <p class="hello">Hello, I'm</p>
+        <h1>Ritesh Vilas Dhatrak</h1>
+
+        <p class="home-text">
+            Android Developer & UI Designer. I build clean, modern and user-friendly
+            Android applications using Java, XML, Firebase and creative UI design.
+        </p>
+
+        <div class="home-buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="resume.pdf" download class="btn secondary">Download Resume</a>
+        </div>
+    </div>
+
+    <div class="home-right">
+        <div class="photo-card">
+            <img src="profile.png" alt="Ritesh Profile Photo">
+        </div>
+    </div>
+</section>
+
+<section class="about section" id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-box">
+        <p>
+            I am Ritesh Vilas Dhatrak i complete my diploma in Cloud Computing
+            and Big Data, passionate about Android development. I enjoy designing
+            attractive mobile app interfaces and building practical projects.
+        </p>
+
+        <div class="skills">
+            <span>Java</span>
+            <span>XML</span>
+            <span>Android Studio</span>
+            <span>Firebase</span>
+            <span>Figma</span>
+            <span>GitHub</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+    </div>
+</section>
+
+<section class="projects section" id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="project-category">
+        <h3 class="category-title">Major Android Projects</h3>
+
+        <div class="project-grid">
+            <div class="project-card" onclick="openProject('fortquest')">
+                <h3>FortQuest</h3>
+                <p>Explore ancient forts through quiz, videos and 360° view concept.</p>
+            </div>
+
+            <div class="project-card" onclick="openProject('careercraft')">
+                <h3>CareerCraft AI</h3>
+                <p>AI Resume Builder and Interview Coach Android app.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-category">
+        <h3 class="category-title">Rebuild App UI Enhancement Projects</h3>
+
+        <div class="project-grid">
+            <div class="project-card" onclick="openProject('irctc')">
+                <h3>IRCTC App Redesign</h3>
+                <p>Modern railway booking app UI redesign.</p>
+            </div>
+
+            <div class="project-card" onclick="openProject('citybus')">
+                <h3>Nashik City Bus App</h3>
+                <p>Clean city bus app UI with route and ticket concept.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-category">
+        <h3 class="category-title">Mini Projects</h3>
+
+        <div class="project-grid">
+            <div class="project-card" onclick="openProject('jarvis')">
+                <h3>Jarvis AI Assistant</h3>
+                <p>Voice-based Android assistant app.</p>
+            </div>
+
+            <div class="project-card" onclick="openProject('food')">
+                <h3>Food Delivery App</h3>
+                <p>Creative food ordering app UI.</p>
+            </div>
+
+            <div class="project-card" onclick="openProject('attendance')">
+                <h3>Student Attendance App</h3>
+                <p>Simple Android attendance management app.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact section" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-box">
+        <p>Email: riteshdhatrak466@gmail.com</p>
+        <p>GitHub: github.com/ritesh15666</p>
+        <p>Location: Nashik, Maharashtra</p>
+
+        <a href="mailto:riteshdhatrak466@gmail.com" class="btn primary">
+            Send Message
+        </a>
+    </div>
+</section>
+
+<div class="project-popup" id="projectPopup">
+    <div class="popup-box">
+        <span class="close-btn" onclick="closeProject()">×</span>
+        <h2 id="popupTitle"></h2>
+        <p id="popupDesc"></p>
+        <div class="output-images" id="popupImages"></div>
+        <a href="#" id="apkBtn" class="btn primary" download>Download APK</a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
